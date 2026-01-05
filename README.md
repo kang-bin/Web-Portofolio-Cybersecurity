@@ -15,8 +15,8 @@ Roboto Mono - Untuk headings dan code-like elements
 Portofolio ini tersedia untuk penggunaan pribadi dan komersial.
 
 # Author
-Vino Rifhendi Setiawan
-Email: vinorifhendi@gmail.com
-LinkedIn: Vino Rifhendi Setiawan
+- Vino Rifhendi Setiawan
+- Email: vinorifhendi@gmail.com
+- LinkedIn: Vino Rifhendi Setiawan
 
 
