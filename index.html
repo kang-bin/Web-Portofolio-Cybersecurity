@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vino Rifhendi | Portofolio Cybersecurity</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'biru': '#2563eb',
+                        'biru-muda': '#3b82f6',
+                        'hijau': '#10b981',
+                        'abu-gelap': '#1e293b',
+                        'abu-terang': '#f8fafc',
+                    },
+                    fontFamily: {
+                        'utama': ['Inter', 'sans-serif'],
+                        'kedua': ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+</head>
+<body class="font-utama text-gray-800 bg-abu-terang">
+    
+    <!-- Navigasi -->
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-2 group">
+                    <div class="w-8 h-8 bg-biru rounded-lg flex items-center justify-center group-hover:bg-biru-muda transition-colors">
+                        <i class="fas fa-shield-alt text-white text-sm"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-abu-gelap">
+                        Portofolio<span class="text-biru">.</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#beranda" class="text-sm font-medium text-gray-600 hover:text-biru transition-colors">
+                        Beranda
+                    </a>
+                    <a href="#tentang" class="text-sm font-medium text-gray-600 hover:text-biru transition-colors">
+                        Tentang
+                    </a>
+                    <a href="#keahlian" class="text-sm font-medium text-gray-600 hover:text-biru transition-colors">
+                        Keahlian
+                    </a>
+                    <a href="#proyek" class="text-sm font-medium text-gray-600 hover:text-biru transition-colors">
+                        Proyek
+                    </a>
+                    <a href="#kontak" class="text-sm font-medium text-white bg-biru hover:bg-biru-muda px-4 py-2 rounded-lg transition-colors">
+                        Kontak
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="md:hidden text-gray-600 hover:text-biru">
+                    <i class="fas fa-bars text-lg"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-200">
+                <div class="container mx-auto px-6 py-4 space-y-4">
+                    <a href="#beranda" class="block text-gray-600 hover:text-biru transition-colors py-2">
+                        Beranda
+                    </a>
+                    <a href="#tentang" class="block text-gray-600 hover:text-biru transition-colors py-2">
+                        Tentang
+                    </a>
+                    <a href="#keahlian" class="block text-gray-600 hover:text-biru transition-colors py-2">
+                        Keahlian
+                    </a>
+                    <a href="#proyek" class="block text-gray-600 hover:text-biru transition-colors py-2">
+                        Proyek
+                    </a>
+                    <a href="#kontak" class="block text-biru font-medium py-2">
+                        Kontak
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Beranda -->
+    <section id="beranda" class="pt-24 pb-16 md:pt-32 md:pb-24 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Konten Teks -->
+                <div class="lg:w-1/2">
+                    <div class="inline-flex items-center px-3 py-1 bg-blue-50 text-biru rounded-full text-sm font-medium mb-6">
+                        <span class="w-2 h-2 bg-biru rounded-full mr-2"></span>
+                        Cybersecurity Enthusiast
+                    </div>
+                    
+                    <h1 class="text-4xl md:text-5xl font-bold text-abu-gelap mb-4 leading-tight">
+                        Halo, Saya <span class="text-biru">Vino Rifhendi Setiawan</span>
+                    </h1>
+                    
+                    <h2 class="text-xl md:text-2xl text-gray-600 mb-6">
+                        Forensik Digital & Cybersecurity
+                    </h2>
+                    
+                    <p class="text-gray-600 mb-8 leading-relaxed max-w-lg">
+                        Lulusan Teknik Informatika yang memiliki pengalaman magang di bidang forensik digital. 
+                        Bersemangat untuk memulai karir di dunia cybersecurity dan terus mengembangkan kemampuan teknis.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#proyek" class="btn btn-primary">
+                            <i class="fas fa-laptop-code mr-2"></i> Lihat Proyek
+                        </a>
+                        <a href="#kontak" class="btn btn-outline">
+                            <i class="fas fa-envelope mr-2"></i> Hubungi Saya
+                        </a>
+                    </div>
+
+                    <!-- Statistik Singkat -->
+                    <div class="flex flex-wrap gap-6 mt-12 pt-8 border-t border-gray-200">
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-abu-gelap">6 Bulan</div>
+                            <div class="text-sm text-gray-500">Forensics Digital Analist Intern</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-abu-gelap">4+</div>
+                            <div class="text-sm text-gray-500">Proyek Selesai</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-2xl font-bold text-abu-gelap">10+</div>
+                            <div class="text-sm text-gray-500">Tools Dikuasai</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Foto Profil -->
+                <div class="lg:w-2/5">
+                    <div class="relative">
+                        <div class="w-64 h-64 md:w-80 md:h-80 mx-auto rounded-2xl overflow-hidden shadow-xl">
+                            <img src="images/profile1.jpeg" alt="Vino Rifhendi" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-xl shadow-lg border border-gray-100">
+                            <div class="text-center">
+                                <div class="text-lg font-bold text-abu-gelap">Freshgraduate</div>
+                                <div class="text-sm text-gray-500">Open to Work</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -->
+    <section id="tentang" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="judul-section">Tentang Saya</h2>
+                <p class="subjudul-section">Perjalanan saya dalam dunia cybersecurity</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Gambar -->
+                <div class="lg:w-2/5">
+                    <div class="relative">
+                        <div class="rounded-2xl overflow-hidden shadow-lg">
+                            <img src="images/profile2.jpeg" alt="Tentang Vino" class="w-full h-auto">
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-lg">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-biru">6</div>
+                                <div class="text-sm text-gray-600">Bulan Pengalaman</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Konten -->
+                <div class="lg:w-3/5">
+                    <h3 class="text-2xl font-bold text-abu-gelap mb-6">
+                        Cybersecurity Enthusiast
+                    </h3>
+                    
+                    <div class="space-y-4 mb-8">
+                        <p class="text-gray-600">
+                            Saya adalah lulusan teknik Informatika dengan pengalaman magang selama 6 bulan di perusahaan bidang jasa IT dan konsultasi IT. 
+                            Selama magang, saya mendapatkan pengalaman langsung dalam investigasi insiden cybercrime dan analisis bukti digital.
+                        </p>
+                        <p class="text-gray-600">
+                            Saya memiliki ketertarikan yang mendalam pada bidang keamanan siber, khususnya IT security, forensik digital analis, SOC analisis dan bidang cybersecurity lainnya 
+                            Saya percaya bahwa pendekatan proaktif dalam keamanan sangat penting untuk melindungi aset digital.
+                        </p>
+                        <p class="text-gray-600">
+                            Saat ini, saya terus mengasah kemampuan teknis dan mencari peluang untuk berkontribusi di bidang keamanan siber.
+                        </p>
+                    </div>
+
+                    <!-- Garis Waktu -->
+                    <div class="bg-gray-50 p-6 rounded-xl border border-gray-100 mb-6">
+                        <h4 class="font-semibold text-abu-gelap mb-4">Jejak Perjalanan</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-biru rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-graduation-cap text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-abu-gelap">Universitas Telkom Purwokerto</h5>
+                                    <p class="text-gray-600 text-sm">S1 Teknik Informatika</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-hijau rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-briefcase text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-abu-gelap">Analis Forensik Digital Intern</h5>
+                                    <p class="text-gray-600 text-sm">PT Analis Forensik Digital</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-8 h-8 bg-purple-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                    <i class="fas fa-project-diagram text-white text-sm"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-medium text-abu-gelap">Sertifikasi</h5>
+                                    <p class="text-gray-600 text-sm">Menyelesaikan sertifikasi pelatihan online</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Fokus Saat Ini -->
+                    <div class="flex items-center p-4 bg-blue-50 rounded-lg border border-blue-100">
+                        <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                            <i class="fas fa-rocket text-biru"></i>
+                        </div>
+                        <div>
+                            <h5 class="font-medium text-abu-gelap">Open to Work</h5>
+                            <p class="text-gray-600 text-sm">Posisi di bidang cybersecurity untuk mengembangkan kemampuan dan berkontribusi untuk perusahaan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Pendidikan -->
+    <section id="pendidikan" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="judul-section">Pendidikan & Pengalaman</h2>
+                <p class="subjudul-section">Latar belakang akademik dan pengalaman</p>
+            </div>
+
+            <div class="max-w-3xl mx-auto">
+                <!-- Timeline Pendidikan -->
+                <div class="relative">
+                    <!-- Garis Timeline -->
+                    <div class="absolute left-0 md:left-1/2 h-full w-0.5 bg-gray-200 transform -translate-x-1/2"></div>
+                    
+                    <!-- Item 1 - Universitas -->
+                    <div class="mb-12 relative">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                                <div class="inline-block bg-blue-50 text-biru px-4 py-1 rounded-full text-sm font-medium mb-2">
+                                    2021 - 2025
+                                </div>
+                                <h3 class="text-xl font-semibold text-abu-gelap">S1 Teknik Informatika</h3>
+                                <p class="text-gray-600">Universitas Telkom Purwokerto</p>
+                                <p class="text-gray-500 text-sm mt-1">GPA 3.73</p>
+                            </div>
+                            
+                            <div class="md:w-1/2 md:pl-12">
+                                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h4 class="font-medium text-abu-gelap mb-2">Pencapaian Utama</h4>
+                                    <ul class="space-y-2 text-sm text-gray-600">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Lulus dengan predikat nilai akhir sangat memuaskan
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Lulus mata kuliah keamanan data dan jaringan dengan nilai A
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Menyelesaikan sertifikasi online "Cyber Security Basics" dari Dicoding Academy
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Menyelesaikan sertifikasi online "Cyber Security Basics" dari Dicoding Academy
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-biru rounded-full border-4 border-white"></div>
+                    </div>
+
+                    <!-- Item 2 - Magang -->
+                    <div class="mb-12 relative">
+                        <div class="md:flex items-center">
+                            <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0 order-2">
+                                <div class="inline-block bg-green-50 text-hijau px-4 py-1 rounded-full text-sm font-medium mb-2">
+                                    2023 (6 Bulan)
+                                </div>
+                                <h3 class="text-xl font-semibold text-abu-gelap">Internship</h3>
+                                <p class="text-gray-600">PT Analis Forensik Digital</p>
+                                <p class="text-gray-500 text-sm mt-1">MSIB Batch 6 - Kampus Merdeka</p>
+                            </div>
+                            
+                            <div class="md:w-1/2 md:pl-12 order-1">
+                                <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
+                                    <h4 class="font-medium text-abu-gelap mb-2">Pengalaman Magang</h4>
+                                    <ul class="space-y-2 text-sm text-gray-600">
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Melakukan investigasi forensik digital dalam kasus cybercrime
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Mempelajari penggunaan tools forensik
+                                        </li>
+                                        <li class="flex items-start">
+                                            <i class="fas fa-check text-hijau mr-2 mt-1"></i>
+                                            Mendokumentasikan bukti serangan untuk mendukung proses hukum
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-hijau rounded-full border-4 border-white"></div>
+                    </div>
+
+                     <!-- Item 3 - Fokus Karir Saat Ini -->
+                <div class="relative">
+                    <div class="md:flex items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-4 md:mb-0">
+                            <div class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white px-4 py-1 rounded-full text-sm font-medium mb-2">
+                                Saat Ini
+                            </div>
+                            <h3 class="text-xl font-semibold text-abu-gelap">Membangun Karir di Cybersecurity</h3>
+                            <p class="text-gray-600">Fokus Penuh pada Pengembangan</p>
+                            <p class="text-gray-500 text-sm mt-1">Siap Berkontribusi</p>
+                        </div>
+                        
+                        <div class="md:w-1/2 md:pl-12">
+                            <div class="bg-gradient-to-br from-white to-purple-50 p-6 rounded-xl border border-purple-100 shadow-sm">
+                                <h4 class="font-medium text-abu-gelap mb-2">Target & Persiapan Karir</h4>
+                                <div class="grid grid-cols-2 gap-4 mb-4">
+                                    <div class="text-center p-3 bg-white rounded-lg border border-gray-100">
+                                        <div class="text-lg font-bold text-biru">🎯</div>
+                                        <div class="text-xs text-gray-600 mt-1">Entry-level Position</div>
+                                    </div>
+                                    <div class="text-center p-3 bg-white rounded-lg border border-gray-100">
+                                        <div class="text-lg font-bold text-biru">🚀</div>
+                                        <div class="text-xs text-gray-600 mt-1">Fast Learner</div>
+                                    </div>
+                                </div>
+                                <ul class="space-y-2 text-sm text-gray-600">
+                                    <li class="flex items-start">
+                                        <i class="fas fa-search text-purple-500 mr-2 mt-1"></i>
+                                        Aktif mencari peluang entry-level di bidang keamanan siber
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-graduation-cap text-purple-500 mr-2 mt-1"></i>
+                                        Mempelajari teknologi terbaru dan tools keamanan
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fas fa-project-diagram text-purple-500 mr-2 mt-1"></i>
+                                        Mengikuti pelatihan online untuk memperdalam skill
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full border-4 border-white shadow-sm"></div>
+                </div>
+            </div>
+
+            <!-- CTA Section untuk Karir -->
+            <div class="mt-12 text-center">
+                <div class="inline-flex flex-col sm:flex-row items-center justify-center gap-4 bg-gradient-to-r from-biru to-biru-muda text-white px-8 py-6 rounded-2xl shadow-lg">
+                    <div class="text-left">
+                        <h4 class="text-lg font-semibold mb-1">Siap Berkontribusi di Tim Anda</h4>
+                        <p class="text-sm text-blue-100">Memiliki dasar teknis yang kuat dan semangat belajar tinggi</p>
+                    </div>
+                    <a href="#kontak" class="btn bg-white text-biru hover:bg-gray-100 whitespace-nowrap">
+                        <i class="fas fa-handshake mr-2"></i> Diskusi Peluang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- Bagian Keahlian -->
+    <section id="keahlian" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="judul-section">Keahlian Teknis</h2>
+                <p class="subjudul-section">Tools dan teknologi yang saya kuasai</p>
+            </div>
+
+            <!-- Grid Keahlian -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Forensik Digital -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-biru text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-abu-gelap mb-4">Forensik Digital</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Pengalaman magang
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Menganalisis log sistem dan melakukan trace analysis untuk melacak aktivitas serangan
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Kemampuan mengumpulkan dan menganalisis bukti digital
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Handling bukti digital yang sesuai standar (chain of custody)
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Kemampuan membuat laporan forensik untuk rekomendasi perbaikan keamanan serta dukungan kasus hukum
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tools Keamanan -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-tools text-hijau text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-abu-gelap mb-4">Tools Keamanan</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Mahir dengan tools standar industri
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Metasploit
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            FTK Imager
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Wireshark
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Nmap
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            OpenVAS
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Kali Linux
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Kompetensi Inti -->
+                <div class="bg-gray-50 p-8 rounded-xl border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-purple-500 text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-abu-gelap mb-4">Kompetensi Inti</h3>
+                    <p class="text-gray-600 mb-4 text-sm">
+                        Kemampuan
+                    </p>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Linux system and Security operations
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Network Security
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Incident Response
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Penetration Testing
+                        </li>
+                        <li class="flex items-center text-gray-600 text-sm">
+                            <i class="fas fa-check text-hijau mr-3"></i>
+                            Vulnerability Assessment
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Grid Tools -->
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-100">
+                <h3 class="text-xl font-semibold text-abu-gelap mb-8 text-center">Teknologi yang Digunakan</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fab fa-linux text-biru text-xl"></i>
+                        </div>
+                        <span class="text-sm text-gray-600">Kali Linux</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-network-wired text-hijau text-xl"></i>
+                        </div>
+                        <span class="text-sm text-gray-600">Nmap</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-purple-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-database text-purple-500 text-xl"></i>
+                        </div>
+                        <span class="text-sm text-gray-600">Splunk</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-yellow-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-terminal text-yellow-500 text-xl"></i>
+                        </div>
+                        <span class="text-sm text-gray-600">Metasploit</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-red-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-bug text-red-500 text-xl"></i>
+                        </div>
+                        <span class="text-sm text-gray-600">Wireshark</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-3">
+                            <i class="fas fa-lock text-indigo-500 text-xl"></i>
+                        </div>
+                        <span class="text-sm text-gray-600">OpenVAS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Proyek -->
+    <section id="proyek" class="py-20 px-6 bg-gray-50">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="judul-section">Proyek & Investigasi</h2>
+                <p class="subjudul-section">Studi kasus forensik digital dan assessment keamanan</p>
+            </div>
+
+            <!-- Proyek Utama -->
+            <div class="mb-12 bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                <div class="md:flex">
+                    <div class="md:w-2/5 p-8 bg-gradient-to-br from-biru to-biru-muda">
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="px-3 py-1 bg-white/20 text-white rounded-full text-xs font-medium">
+                                Forensik Digital
+                            </span>
+                            <span class="px-3 py-1 bg-white/20 text-white rounded-full text-xs font-medium">
+                                Incident Response
+                            </span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-white mb-4">Investigasi Serangan Web Server</h3>
+                        <p class="text-white/80 mb-6">
+                            Investigasi forensik serangan ransomware dan defacement pada server web perusahaan farmasi.
+                        </p>
+                        <div class="flex items-center text-white/60 text-sm">
+                            <i class="fas fa-calendar mr-2"></i>
+                            <span>2023</span>
+                            <i class="fas fa-building ml-6 mr-2"></i>
+                            <span>PT Analis Forensik Digital</span>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-3/5 p-8">
+                        <h4 class="text-lg font-semibold text-abu-gelap mb-4">Pencapaian Utama</h4>
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-hijau mt-1 mr-3"></i>
+                                <span>Mengidentifikasi penyerang dan metodologi serangan melalui analisis log</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-hijau mt-1 mr-3"></i>
+                                <span>Memulihkan data terenkripsi dengan mendekripsi payload ransomware</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-hijau mt-1 mr-3"></i>
+                                <span>Membuat laporan forensik terstruktur untuk kepentingan rekomendasi perbaikan keamanan atau proses kasus hukum                                </span>
+                            </li>
+                        </ul>
+                        
+                        <div class="flex items-center justify-between pt-6 border-t border-gray-200">
+                            <div>
+                                <span class="text-sm text-gray-500">Tools: Kali Linux, Splunk, FTK Imager, Autopsy, OpenSSL</span>
+                            </div>
+                            <a href="#" class="text-biru hover:text-biru-muda font-medium">
+                                Lihat Studi Kasus →
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid Proyek Lainnya -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Proyek 2 -->
+                <div class="bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="px-3 py-1 bg-red-50 text-red-600 rounded-full text-xs font-medium">
+                                Assessment
+                            </span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-abu-gelap mb-3">Audit Keamanan Website Pemerintah</h4>
+                        <p class="text-gray-600 mb-6">
+                            Assessment kerentanan komprehensif pada website pemerintah daerah yang mengidentifikasi masalah keamanan kritis.
+                        </p>
+                        
+                        <div class="mb-6">
+                            <div class="flex justify-between text-sm text-gray-500 mb-2">
+                                <span>Temuan</span>
+                                <span>3 Kritis</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-red-500 h-2 rounded-full" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Nmap • Nikto • OWASP ZAP</span>
+                            <a href="#" class="text-biru hover:text-biru-muda">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 3 -->
+                <div class="bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-xs font-medium">
+                                Network Security
+                            </span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-abu-gelap mb-3">Setup Lab Keamanan Jaringan</h4>
+                        <p class="text-gray-600 mb-6">
+                            Membangun lab forensik jaringan dengan konfigurasi server Ubuntu, firewall, dan analisis traffic.
+                        </p>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-server text-blue-500 mr-3"></i>
+                                <span>Konfigurasi Ubuntu Server</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-shield-alt text-green-500 mr-3"></i>
+                                <span>Setup Firewall UFW</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <i class="fas fa-chart-network text-purple-500 mr-3"></i>
+                                <span>Analisis Wireshark</span>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Lingkungan Lab</span>
+                            <a href="#" class="text-biru hover:text-biru-muda">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyek 4 -->
+                <div class="bg-white rounded-xl border border-gray-100 hover:shadow-md transition-shadow overflow-hidden">
+                    <div class="p-6">
+                        <div class="flex items-center gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-50 text-purple-600 rounded-full text-xs font-medium">
+                                Analisis Web
+                            </span>
+                        </div>
+                        <h4 class="text-xl font-semibold text-abu-gelap mb-3">Analisis Pola Serangan Web</h4>
+                        <p class="text-gray-600 mb-6">
+                            Menganalisis log server Apache untuk mengidentifikasi dan mengkategorikan serangan SQL dan Command Injection.
+                        </p>
+                        
+                        <div class="flex items-center justify-around mb-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-abu-gelap">4</div>
+                                <div class="text-xs text-gray-500">SQL Injection</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-abu-gelap">5</div>
+                                <div class="text-xs text-gray-500">Command Injection</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-gray-500">Analisis Log • Pattern Recognition</span>
+                            <a href="#" class="text-biru hover:text-biru-muda">
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Sertifikasi & Pelatihan -->
+    <section id="sertifikasi" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="judul-section">Sertifikasi & Pelatihan</h2>
+                <p class="subjudul-section">Kredensial profesional dan pengembangan kompetensi berkelanjutan</p>
+            </div>
+
+            <!-- Main Certification Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- Sertifikasi 1 - Dicoding -->
+                <div class="bg-gradient-to-br from-white to-blue-50 rounded-2xl border border-blue-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-shield-alt text-biru text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-2 py-1 bg-blue-100 text-biru text-xs rounded-full font-medium mb-1">
+                                    SERTIFIKASI
+                                </div>
+                                <h3 class="text-lg font-semibold text-abu-gelap">Cyber Security Basics</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <i class="fas fa-building text-gray-400 mr-2"></i>
+                            <span>Dicoding Academy</span>
+                            <i class="fas fa-calendar-alt text-gray-400 ml-4 mr-2"></i>
+                            <span>2023</span>
+                        </div>
+                        
+                        <p class="text-gray-600 text-sm mb-4">
+                            Fundamental keamanan siber meliputi konsep dasar, threat modeling, dan praktik keamanan jaringan.
+                        </p>
+                        
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Topik yang dikuasai:</div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-blue-50 text-biru text-xs rounded">Ancaman dan Jenis Serangan pada Cyber Security</span>
+                                <span class="px-2 py-1 bg-blue-50 text-biru text-xs rounded">Definisi & Pentingnya Cyber Security</span>
+                                <span class="px-2 py-1 bg-blue-50 text-biru text-xs rounded">Tools dan Teknologi Dasar dalam Cyber Security</span>
+                            </div>
+                        </div>
+                        
+                        <a href="https://www.dicoding.com/certificates/ERZR2V6WQPYV" class="inline-flex items-center text-biru text-sm font-medium hover:text-biru-muda">
+                            Lihat Sertifikat <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="px-6 py-3 bg-blue-50 border-t border-blue-100">
+                        <div class="flex items-center text-xs text-gray-600">
+                            <i class="fas fa-clock text-gray-400 mr-2"></i>
+                            <span>Durasi: 20 jam</span>
+                            <i class="fas fa-check-circle text-green-500 ml-4 mr-2"></i>
+                            <span>Terverifikasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sertifikasi 2 - Cisco -->
+                <div class="bg-gradient-to-br from-white to-green-50 rounded-2xl border border-green-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-network-wired text-hijau text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-2 py-1 bg-green-100 text-hijau text-xs rounded-full font-medium mb-1">
+                                    SERTIFIKASI
+                                </div>
+                                <h3 class="text-lg font-semibold text-abu-gelap">Introduction to Cybersecurity</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <i class="fas fa-building text-gray-400 mr-2"></i>
+                            <span>Cisco Networking Academy</span>
+                            <i class="fas fa-calendar-alt text-gray-400 ml-4 mr-2"></i>
+                            <span>2023</span>
+                        </div>
+                        
+                        <p class="text-gray-600 text-sm mb-4">
+                            Pengenalan komprehensif tentang cybersecurity, termasuk ethical hacking dan pertahanan jaringan.
+                        </p>
+                        
+                        <div class="mb-4">
+                            <div class="text-xs text-gray-500 mb-1">Keterampilan:</div>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-2 py-1 bg-green-50 text-hijau text-xs rounded">Network Defense</span>
+                                <span class="px-2 py-1 bg-green-50 text-hijau text-xs rounded">Ethical Hacking</span>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="inline-flex items-center text-hijau text-sm font-medium hover:text-green-600">
+                            Lihat Sertifikat <i class="fas fa-external-link-alt ml-2 text-xs"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="px-6 py-3 bg-green-50 border-t border-green-100">
+                        <div class="flex items-center text-xs text-gray-600">
+                            <i class="fas fa-clock text-gray-400 mr-2"></i>
+                            <span>Durasi: 30 jam</span>
+                            <i class="fas fa-check-circle text-green-500 ml-4 mr-2"></i>
+                            <span>Terverifikasi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pelatihan 3 - TryHackMe -->
+                <div class="bg-gradient-to-br from-white to-purple-50 rounded-2xl border border-purple-100 shadow-sm overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mr-4">
+                                <i class="fas fa-terminal text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="inline-flex items-center px-2 py-1 bg-purple-100 text-purple-600 text-xs rounded-full font-medium mb-1">
+                                    PELATIHAN
+                                </div>
+                                <h3 class="text-lg font-semibold text-abu-gelap">Cybersecurity Learning Path</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center text-sm text-gray-600 mb-4">
+                            <i class="fas fa-building text-gray-400 mr-2"></i>
+                            <span>TryHackMe Platform</span>
+                            <i class="fas fa-calendar-alt text-gray-400 ml-4 mr-2"></i>
+                            <span>2023-Sekarang</span>
+                        </div>
+                        
+                        <p class="text-gray-600 text-sm mb-4">
+                            Pelatihan hands-on melalui platform lab virtual dengan berbagai challenges dan room pembelajaran.
+                        </p>
+                        
+                        <div class="mb-4">
+                            <div class="flex items-center justify-between mb-2">
+                                <div class="text-xs text-gray-500">Progress:</div>
+                                <div class="text-xs font-medium text-purple-600">65%</div>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-purple-500 h-2 rounded-full" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="text-xs text-gray-500 mb-2">Room yang diselesaikan:</div>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 text-xs rounded">Intro to Pentesting</span>
+                            <span class="px-2 py-1 bg-purple-50 text-purple-600 text-xs rounded">Web Fundamentals</span>
+                        </div>
+                    </div>
+                    
+                    <div class="px-6 py-3 bg-purple-50 border-t border-purple-100">
+                        <div class="flex items-center text-xs text-gray-600">
+                            <i class="fas fa-fire text-orange-500 mr-2"></i>
+                            <span>Streak: 14 hari</span>
+                            <i class="fas fa-trophy text-yellow-500 ml-4 mr-2"></i>
+                            <span>15 Badges</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Training & Badges -->
+            <div class="bg-gray-50 rounded-2xl border border-gray-200 p-8">
+                <h3 class="text-xl font-semibold text-abu-gelap mb-6 text-center">Pelatihan Tambahan & Pencapaian</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Badge 1 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-sm">
+                            <i class="fab fa-google text-biru text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800 mb-1">Google IT Support</h4>
+                        <p class="text-xs text-gray-600 mb-2">Professional Certificate</p>
+                        <div class="inline-flex items-center px-2 py-1 bg-gray-100 text-gray-700 text-xs rounded-full">
+                            <i class="fas fa-clock mr-1 text-xs"></i> Dalam Progress
+                        </div>
+                    </div>
+                    
+                    <!-- Badge 2 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-sm">
+                            <i class="fas fa-code text-hijau text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800 mb-1">Secure Coding Basics</h4>
+                        <p class="text-xs text-gray-600 mb-2">OWASP Top 10</p>
+                        <div class="inline-flex items-center px-2 py-1 bg-green-100 text-hijau text-xs rounded-full">
+                            <i class="fas fa-check mr-1 text-xs"></i> Selesai
+                        </div>
+                    </div>
+                    
+                    <!-- Badge 3 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-red-100 to-red-200 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-sm">
+                            <i class="fas fa-bug text-red-500 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800 mb-1">Bug Bounty Fundamentals</h4>
+                        <p class="text-xs text-gray-600 mb-2">Platform: HackerOne</p>
+                        <div class="inline-flex items-center px-2 py-1 bg-red-100 text-red-600 text-xs rounded-full">
+                            <i class="fas fa-graduation-cap mr-1 text-xs"></i> Learning
+                        </div>
+                    </div>
+                    
+                    <!-- Badge 4 -->
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-2xl flex items-center justify-center mx-auto mb-3 shadow-sm">
+                            <i class="fas fa-chart-line text-yellow-600 text-xl"></i>
+                        </div>
+                        <h4 class="font-medium text-gray-800 mb-1">Security+ Prep</h4>
+                        <p class="text-xs text-gray-600 mb-2">CompTIA</p>
+                        <div class="inline-flex items-center px-2 py-1 bg-yellow-100 text-yellow-700 text-xs rounded-full">
+                            <i class="fas fa-book mr-1 text-xs"></i> Studying
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak -->
+    <section id="kontak" class="py-20 px-6 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="judul-section">Hubungi Saya</h2>
+                <p class="subjudul-section">Siap berdiskusi tentang kebutuhan keamanan sistem Anda</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden">
+                    <div class="md:flex">
+                        <!-- Info Kontak -->
+                        <div class="md:w-2/5 p-8 bg-gradient-to-b from-biru to-biru-muda">
+                            <h3 class="text-2xl font-bold text-white mb-6">Informasi Kontak</h3>
+                            
+                            <div class="space-y-6 mb-8">
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-envelope text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white/80 text-sm">Email</p>
+                                        <a href="mailto:vinorifhendi@gmail.com" class="text-white font-medium">
+                                            vinorifhendi@gmail.com
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-phone text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white/80 text-sm">Telepon</p>
+                                        <a href="tel:+6285893077762" class="text-white font-medium">
+                                            +62 858 9307 7762
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-center">
+                                    <div class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center mr-4">
+                                        <i class="fas fa-map-marker-alt text-white"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-white/80 text-sm">Lokasi</p>
+                                        <span class="text-white font-medium">Pekalongan, Indonesia</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <h4 class="text-white font-medium mb-4">Terhubung dengan saya</h4>
+                                <div class="flex space-x-4">
+                                    <a href="https://github.com/kang-bin" target="_blank" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/vino-rifhendi-setiawan-296101285/" target="_blank" class="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center text-white hover:bg-white/30 transition-colors">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Form Kontak -->
+                        <div class="md:w-3/5 p-8">
+                            <form id="form-kontak" action="https://formspree.io/f/xvzgyrjn" method="POST" class="space-y-6">
+                                <div class="grid md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="nama" class="block text-sm font-medium text-gray-700 mb-2">
+                                            Nama Lengkap :
+                                        </label>
+                                        <input type="text" id="nama" class="input-form" required>
+                                    </div>
+                                    <div>
+                                        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
+                                            Email :
+                                        </label>
+                                        <input type="email" id="email" class="input-form" required>
+                                    </div>
+                                </div>
+                                
+                                <div>
+                                    <label for="subjek" class="block text-sm font-medium text-gray-700 mb-2">
+                                        Subjek 
+                                    </label>
+                                    <select id="subjek" class="input-form">
+                                        <option value="">Pilih topik</option>
+                                        <option value="forensics">Penawaran Kerja</option>
+                                        <option value="assessment">Assessment Keamanan</option>
+                                        <option value="consulting">Konsultasi</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                </div>
+                                
+                                <div>
+                                    <label for="pesan" class="block text-sm font-medium text-gray-700 mb-2">
+                                        Pesan :
+                                    </label>
+                                    <textarea id="pesan" rows="4" class="input-form" required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary w-full">
+                                    Kirim Pesan
+                                </button>
+                                
+                                <div id="pesan-form" class="hidden p-4 rounded-lg text-sm"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-abu-gelap text-white py-12 px-6">
+        <div class="container mx-auto">
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-biru to-biru-muda rounded-2xl p-8 mb-12 text-center">
+                <h3 class="text-2xl font-bold mb-4">Siap Memulai Karir di bidang Cybersecurity</h3>
+                <p class="text-white/80 mb-6 max-w-2xl mx-auto">
+                    Saya aktif mencari posisi di bidang Cybersecurity, Forensik digital, atau IT security. 
+                    Mari berdiskusi bagaimana saya dapat berkontribusi untuk perusahaan.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="mailto:vinorifhendi@gmail.com" class="btn bg-white text-biru hover:bg-gray-100">
+                        <i class="fas fa-envelope mr-2"></i> Email Saya
+                    </a>
+                    <a href="https://export-download.canva.com/CKpjc/DAG8xgCKpjc/68/0-7748933057300057687.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260105T024241Z&X-Amz-Expires=53473&X-Amz-Signature=315e393b1a09f4cccae6c5730c0d3fb994bd1bff2040a17154a16c4a8cc70886&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%2A%3DUTF-8%27%27CV%2520Vino%2520Rifhendi.pdf&response-expires=Mon%2C%2005%20Jan%202026%2017%3A33%3A54%20GMT" class="btn bg-transparent border border-white text-white hover:bg-white/10">
+                        <i class="fas fa-file-download mr-2"></i> Unduh CV
+                    </a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="flex items-center space-x-2 mb-4">
+                        <div class="w-8 h-8 bg-biru rounded-lg flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-sm"></i>
+                        </div>
+                        <span class="text-xl font-semibold">Vino Rifhendi<span class="text-biru">.</span></span>
+                    </a>
+                    <p class="text-gray-400">Cybersecurity Enthusiast</p>
+                </div>
+                
+                <div class="flex space-x-8 mb-8 md:mb-0">
+                    <a href="#beranda" class="text-gray-400 hover:text-white transition-colors">Beranda</a>
+                    <a href="#tentang" class="text-gray-400 hover:text-white transition-colors">Tentang</a>
+                    <a href="#pendidikan" class="text-gray-400 hover:text-white transition-colors">Pendidikan</a>
+                    <a href="#proyek" class="text-gray-400 hover:text-white transition-colors">Proyek</a>
+                    <a href="#kontak" class="text-gray-400 hover:text-white transition-colors">Kontak</a>
+                </div>
+                
+                <button id="kembali-ke-atas" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:text-white hover:bg-gray-700 transition-colors">
+                    <i class="fas fa-chevron-up"></i>
+                </button>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; <span id="tahun-sekarang">Copyright 2026</span> Vino Rifhendi Setiawan.
+                </p>
+                <p class="text-gray-500 text-sm mt-2">
+                    "Satu-satunya cara untuk melakukan pekerjaan hebat adalah dengan mencintai apa yang Anda lakukan." - Steve Jobs
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
