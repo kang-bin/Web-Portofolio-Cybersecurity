@@ -1,8 +1,9 @@
 # Portofolio Saya
+Projek ini untuk kebutuhan portofolio saya. Silahkan bagi kalian yang membutuhkan referensi web portofolio bisa clone projek saya.
 
 # Font 
-Inter - Untuk body text  
-Roboto Mono - Untuk headings dan code-like elements
+- Inter - Untuk body text  
+- Roboto Mono - Untuk headings dan code-like elements
 
 # Deploy
 1. Clone/download repository
